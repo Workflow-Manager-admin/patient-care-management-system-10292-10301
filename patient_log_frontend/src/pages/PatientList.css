@@ -1,0 +1,90 @@
+.patient-list-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--main-bg);
+  border-radius: 10px;
+  box-shadow: 0 1px 12px rgba(30, 36, 77, 0.04);
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+
+.list-controls {
+  margin-bottom: 1.1rem;
+}
+
+.search-box {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: 1.3px solid var(--border-color);
+  font-size: 1rem;
+  min-width: 220px;
+}
+
+/* Table styles */
+.patient-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.patient-table th,
+.patient-table td {
+  border-bottom: 1.3px solid var(--border-color);
+  padding: 0.75rem 0.8rem;
+  text-align: left;
+}
+
+.patient-table th {
+  background: var(--bg-secondary);
+  color: var(--primary);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.patient-table tr:last-child td {
+  border-bottom: none;
+}
+
+.patient-table .btn-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-small {
+  font-size: 0.92rem;
+  padding: 0.2rem 0.7rem;
+  margin: 0 0.18rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-small.btn-accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-small.btn-accent:hover {
+  opacity: 0.9;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+  .patient-list-page {
+    padding: 0.3rem;
+  }
+  .patient-table th, 
+  .patient-table td {
+    padding: 0.37rem;
+    font-size: 0.98rem;
+  }
+}

@@ -1,0 +1,76 @@
+.patient-form-page {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--main-bg);
+  border-radius: 10px;
+  box-shadow: 0 1px 9px rgba(30,36,77,0.04);
+  padding: 2rem 2rem;
+}
+
+.form-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.tabs {
+  margin-left: 30px;
+}
+
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.patient-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.18em;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.patient-form input,
+.patient-form select {
+  font-size: 1em;
+  font-family: inherit;
+  border-radius: 6px;
+  padding: 0.43em 1em;
+  border: 1.2px solid var(--border-color);
+  margin-top: 0.28em;
+  background: #fff;
+}
+
+.log-form-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+}
+
+.log-form-grid label {
+  font-size: 0.97em;
+}
+
+.log-entries-list ul {
+  list-style: bullet;
+  margin-left: 1em;
+  line-height: 1.75;
+}
+
+@media (max-width: 600px) {
+  .patient-form-page {
+    padding: 0.4rem;
+  }
+  .form-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .log-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

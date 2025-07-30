@@ -1,0 +1,72 @@
+.patient-detail-page {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--main-bg);
+  border-radius: 10px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2rem;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.patient-id {
+  color: var(--secondary);
+  font-size: 0.95em;
+  margin-left: 0.45em;
+  font-weight: 400;
+}
+
+.patient-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+  gap: 0.8rem;
+}
+
+.logs-section {
+  margin-top: 1.85rem;
+}
+
+.logs-section h3 {
+  margin-bottom: 0.7rem;
+  color: var(--primary);
+}
+
+.no-logs {
+  padding: 1rem 0;
+  color: #888;
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.85rem;
+}
+
+.logs-table th,
+.logs-table td {
+  border-bottom: 1.3px solid var(--border-color);
+  padding: 0.5rem 0.77rem;
+}
+
+.logs-table th {
+  background: var(--bg-secondary);
+  color: var(--primary);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .patient-detail-page {
+    padding: 0.5rem;
+  }
+  .patient-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
