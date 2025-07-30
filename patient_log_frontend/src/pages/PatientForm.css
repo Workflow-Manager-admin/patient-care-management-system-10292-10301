@@ -1,10 +1,18 @@
 .patient-form-page {
-  max-width: 560px;
-  margin: 0 auto;
+  max-width: 570px;
+  margin: 2.5rem auto 2.3rem auto;
   background: var(--main-bg);
-  border-radius: 10px;
-  box-shadow: 0 1px 9px rgba(30,36,77,0.04);
-  padding: 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 44px rgba(25, 118, 210, 0.09), 0 2.5px 15px #c3d7f433;
+  padding: 2.3rem 2.3rem 2rem 2.3rem;
+  overflow: hidden;
+  position: relative;
+  animation: fade-in-detail 0.9s cubic-bezier(.13,.75,.58,1.03) 0s 1;
+}
+
+@keyframes fade-in-detail {
+  from { opacity: 0; transform: translateY(30px) scale(0.98);}
+  to   { opacity: 1; transform: translateY(0) scale(1);}
 }
 
 .form-header {
